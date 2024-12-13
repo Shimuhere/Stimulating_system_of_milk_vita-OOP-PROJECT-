@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.stimulating_system_of_milk_vita.shimuuser4.MonitorDeliveryVehiclesController">
+   <children>
+      <TableView fx:id="monitorDeliveryVehicle" layoutX="11.0" layoutY="31.0" prefHeight="239.0" prefWidth="576.0">
+        <columns>
+            <TableColumn fx:id="vehicleID" prefWidth="135.0" text="Vehicle ID" />
+            <TableColumn fx:id="currentStatus" prefWidth="161.0" text="Current Status" />
+            <TableColumn fx:id="avgDeliveryTime" prefWidth="135.0" text="Average Delivery Time" />
+            <TableColumn fx:id="issueIdentified" prefWidth="144.0" text="Issue Identified" />
+        </columns>
+      </TableView>
+      <Button layoutX="506.0" layoutY="325.0" mnemonicParsing="false" onAction="#submitOnClick" text="Submit" />
+      <Button layoutX="46.0" layoutY="325.0" mnemonicParsing="false" onAction="#backHandle" text="Back" />
+   </children>
+</AnchorPane>
