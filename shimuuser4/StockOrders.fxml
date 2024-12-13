@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.stimulating_system_of_milk_vita.shimuuser4.StockOrders"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="519.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.stimulating_system_of_milk_vita.shimuuser4.StockOrdersController">
+   <children>
+      <Label layoutX="25.0" layoutY="28.0" text="Pending Stock Orders" />
+      <TableView fx:id="pendingStock" layoutX="25.0" layoutY="66.0" prefHeight="200.0" prefWidth="555.0">
+        <columns>
+          <TableColumn fx:id="supplierName" prefWidth="172.0" text="Supplier Name" />
+          <TableColumn fx:id="productStock" prefWidth="202.0" text="Product" />
+            <TableColumn fx:id="quantityStock" prefWidth="180.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <Label layoutX="25.0" layoutY="287.0" text="Adjust Delivery Schedule" />
+      <DatePicker fx:id="adjustDeliverySchedule" layoutX="183.0" layoutY="283.0" />
+      <Label layoutX="25.0" layoutY="345.0" text="Supplier Details" />
+      <Label layoutX="25.0" layoutY="376.0" text="Name:" />
+      <Label layoutX="25.0" layoutY="438.0" text="Phone:" />
+      <Label layoutX="25.0" layoutY="407.0" text="Email:" />
+      <Button layoutX="36.0" layoutY="479.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Button layoutX="490.0" layoutY="480.0" mnemonicParsing="false" onAction="#submitOnClick" text="Submit" />
+      <TextField fx:id="supplierName" layoutX="103.0" layoutY="372.0" />
+      <TextField fx:id="supplierEmail" layoutX="103.0" layoutY="403.0" />
+      <TextField fx:id="supplierPhone" layoutX="103.0" layoutY="434.0" />
+   </children>
 </AnchorPane>
