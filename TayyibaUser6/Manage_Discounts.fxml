@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="486.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_milkvita.TayyibaUser6.ManageDiscountsController">
+   <children>
+      <Label layoutX="175.0" layoutY="26.0" text="Applying Discounts to Products">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="discountTableview" layoutX="102.0" layoutY="194.0" prefHeight="151.0" prefWidth="357.0">
+        <columns>
+          <TableColumn fx:id="productnameColumn" prefWidth="158.0" text="Product Name" />
+          <TableColumn fx:id="currentpriceColumn" prefWidth="198.0" text="Current Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="102.0" layoutY="148.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="25.0" prefWidth="61.0" text="Add" />
+      <Button layoutX="102.0" layoutY="400.0" mnemonicParsing="false" onAction="#applydiscountsButton" text="Apply Discounts" />
+      <Label layoutX="102.0" layoutY="90.0" text="Product Name:" />
+      <Label layoutX="105.0" layoutY="361.0" text="Discount Percentage:" />
+      <TextField fx:id="productnameTextfield" layoutX="206.0" layoutY="86.0" />
+      <TextField fx:id="discountpercentageTextfield" layoutX="238.0" layoutY="357.0" />
+      <Label layoutX="102.0" layoutY="121.0" text="Current Price:" />
+      <TextField fx:id="currentpriceTextfield" layoutX="206.0" layoutY="117.0" />
+   </children>
+</AnchorPane>

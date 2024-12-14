@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="427.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_milkvita.TayyibaUser5.StockLevelController">
+   <children>
+      <Label layoutX="37.0" layoutY="56.0" text=" Product Name:" />
+      <Button layoutX="132.0" layoutY="100.0" mnemonicParsing="false" onAction="#monitorstockButton" prefHeight="25.0" prefWidth="291.0" text="Monitor Stock" />
+      <TableView fx:id="stocklevelTableview" layoutX="31.0" layoutY="136.0" prefHeight="157.0" prefWidth="535.0">
+        <columns>
+          <TableColumn fx:id="productnamecolumn" prefWidth="119.0" text="Product Name" />
+          <TableColumn fx:id="requiredquantitycolumn" prefWidth="133.0" text="Required Quantity" />
+            <TableColumn fx:id="currentquantitycolumn" prefWidth="122.0" text="Current Quantity" />
+            <TableColumn fx:id="statuscolumn" prefWidth="159.0" text="Status" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="productnameCombobox" layoutX="157.0" layoutY="52.0" prefWidth="150.0" />
+      <Button layoutX="31.0" layoutY="343.0" mnemonicParsing="false" onAction="#restockButton" prefHeight="25.0" prefWidth="79.0" text="Restock" />
+      <Label layoutX="246.0" layoutY="14.0" text=" Stock Lebel ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

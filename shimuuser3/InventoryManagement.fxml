@@ -9,7 +9,7 @@
    <children>
       <Label layoutX="64.0" layoutY="62.0" text="Select Material Type:" />
       <Label layoutX="64.0" layoutY="139.0" text="Stock Level:" />
-      <ComboBox layoutX="339.0" layoutY="57.0" prefWidth="150.0" />
+      <ComboBox fx:id="selecTmaterial" layoutX="339.0" layoutY="57.0" prefWidth="150.0" />
       <ComboBox fx:id="stockLevel" layoutX="339.0" layoutY="134.0" prefWidth="150.0" />
       <Button layoutX="64.0" layoutY="271.0" mnemonicParsing="false" onAction="#backHandle" text="Back" />
       <Button layoutX="433.0" layoutY="271.0" mnemonicParsing="false" onAction="#submitHandle" text="Submit" />

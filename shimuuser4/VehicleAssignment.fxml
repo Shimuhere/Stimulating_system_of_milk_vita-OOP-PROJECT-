@@ -5,23 +5,30 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.stimulating_system_of_milk_vita.shimuuser4.VehicleAssignmentController">
    <children>
-      <Label layoutX="16.0" layoutY="36.0" text="Vehicle Assignment" />
-      <TableView fx:id="vehicleAssignementTable" layoutX="16.0" layoutY="72.0" prefHeight="200.0" prefWidth="565.0">
+      <TableView fx:id="vehicleAssignementTable" layoutX="18.0" layoutY="100.0" prefHeight="200.0" prefWidth="565.0">
         <columns>
           <TableColumn fx:id="vehicleID" prefWidth="192.0" text="Vehicle ID" />
           <TableColumn fx:id="capacityVehicle" prefWidth="189.0" text="Capacity" />
             <TableColumn fx:id="statusVehicle" prefWidth="183.0" text="Status" />
         </columns>
       </TableView>
-      <Label layoutX="26.0" layoutY="290.0" text="Select Delivery Route:" />
-      <ComboBox fx:id="deliveryRoute" layoutX="150.0" layoutY="286.0" prefWidth="150.0" />
-      <Label layoutX="315.0" layoutY="291.0" text="Assign Vehicle:" />
-      <ComboBox fx:id="assignVehicle" layoutX="410.0" layoutY="286.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="16.0" layoutY="317.0" text="Select Delivery Route:" />
+      <ComboBox fx:id="deliveryRoute" layoutX="145.0" layoutY="313.0" prefWidth="150.0" />
+      <Label layoutX="315.0" layoutY="317.0" text="Assign Vehicle:" />
+      <ComboBox fx:id="assignVehicle" layoutX="411.0" layoutY="312.0" prefHeight="26.0" prefWidth="150.0" />
       <Button layoutX="505.0" layoutY="348.0" mnemonicParsing="false" onAction="#submitOnClick" text="Submit" />
-      <Button layoutX="26.0" layoutY="348.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Button layoutX="16.0" layoutY="348.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Label layoutX="47.0" layoutY="14.0" text="Delivery ID:" />
+      <Label layoutX="315.0" layoutY="14.0" text="Status:" />
+      <Label layoutX="47.0" layoutY="65.0" text="Capacity:" />
+      <Button layoutX="315.0" layoutY="53.0" mnemonicParsing="false" onAction="#addOnClick" text="Add" />
+      <TextField fx:id="deliverYID" layoutX="119.0" layoutY="10.0" />
+      <TextField fx:id="CAPAcity" layoutX="119.0" layoutY="61.0" />
+      <TextField fx:id="StAtUs" layoutX="373.0" layoutY="10.0" />
    </children>
 </AnchorPane>

@@ -5,21 +5,29 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.stimulating_system_of_milk_vita.shimuuser4.DeliveryTrackerController">
    <children>
-      <TableView fx:id="deliveryTrackerView" layoutX="15.0" layoutY="28.0" prefHeight="200.0" prefWidth="571.0">
+      <TableView fx:id="deliveryTrackerView" layoutX="15.0" layoutY="86.0" prefHeight="200.0" prefWidth="571.0">
         <columns>
           <TableColumn fx:id="deliveryID" prefWidth="193.0" text="Delivery ID " />
           <TableColumn fx:id="destination" prefWidth="192.0" text="Destination" />
             <TableColumn fx:id="status" prefWidth="185.0" text="Status" />
         </columns>
       </TableView>
-      <Label layoutX="45.0" layoutY="246.0" text="Reschedule Delivery" />
-      <DatePicker fx:id="dateOfReschedule" layoutX="47.0" layoutY="275.0" />
-      <Button fx:id="updateSchedule" layoutX="48.0" layoutY="312.0" mnemonicParsing="false" text="Update Schedule" />
-      <Button fx:id="markAsCompletedButton" layoutX="461.0" layoutY="242.0" mnemonicParsing="false" text="Mark as completed" />
-      <Button fx:id="backHandle" layoutX="461.0" layoutY="300.0" mnemonicParsing="false" text="Back" />
+      <Label layoutX="39.0" layoutY="21.0" text="Delivery ID:" />
+      <DatePicker fx:id="dateOfReschedule" layoutX="45.0" layoutY="316.0" />
+      <Button fx:id="updateSchedule" layoutX="45.0" layoutY="353.0" mnemonicParsing="false" text="Update Schedule" />
+      <Button fx:id="markAsCompletedButton" layoutX="461.0" layoutY="291.0" mnemonicParsing="false" text="Mark as completed" />
+      <Button fx:id="backHandle" layoutX="461.0" layoutY="353.0" mnemonicParsing="false" text="Back" />
+      <Label layoutX="46.0" layoutY="295.0" text="Reschedule Delivery" />
+      <Label layoutX="39.0" layoutY="59.0" text="Destination:" />
+      <Label layoutX="325.0" layoutY="21.0" text="Status:" />
+      <TextField fx:id="deliveryId" layoutX="104.0" layoutY="17.0" />
+      <TextField fx:id="destinAtion" layoutX="104.0" layoutY="55.0" />
+      <TextField fx:id="staTus" layoutX="363.0" layoutY="17.0" />
+      <Button layoutX="363.0" layoutY="55.0" mnemonicParsing="false" onAction="#addOnClick" text="Add" />
    </children>
 </AnchorPane>

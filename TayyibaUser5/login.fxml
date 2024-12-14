@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_milkvita.LoginController">
+   <children>
+      <TextField layoutX="198.0" layoutY="95.0" />
+      <TextField layoutX="198.0" layoutY="143.0" />
+      <Label layoutX="457.0" layoutY="92.0" prefHeight="81.0" prefWidth="125.0" style="-fx-border-color: red;" />
+      <Label layoutX="106.0" layoutY="147.0" text="Password:" />
+      <Label layoutX="106.0" layoutY="99.0" text="User Name:" />
+      <Button layoutX="248.0" layoutY="188.0" mnemonicParsing="false" text="Forget Password" />
+      <Button layoutX="116.0" layoutY="256.0" mnemonicParsing="false" text="Log In" />
+      <Button layoutX="281.0" layoutY="256.0" mnemonicParsing="false" text="Sign In" />
+   </children>
+</AnchorPane>

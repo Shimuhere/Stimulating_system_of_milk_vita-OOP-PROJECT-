@@ -12,8 +12,9 @@
       <ComboBox fx:id="productionBatch" layoutX="203.0" layoutY="63.0" prefWidth="150.0" />
       <ComboBox fx:id="batchStatus" layoutX="179.0" layoutY="172.0" prefWidth="150.0" />
       <Label layoutX="94.0" layoutY="176.0" text="Batch Status:" />
-      <Button layoutX="94.0" layoutY="250.0" mnemonicParsing="false" text="Back" />
-      <Button layoutX="489.0" layoutY="250.0" mnemonicParsing="false" text="Submit" />
-      <TextField fx:id="fieldProduction" layoutX="385.0" layoutY="52.0" prefHeight="145.0" prefWidth="160.0" />
+      <Button layoutX="94.0" layoutY="250.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Button layoutX="489.0" layoutY="250.0" mnemonicParsing="false" onAction="#submitOnClick" text="Submit" />
+      <TextField fx:id="fieldProduction" layoutX="393.0" layoutY="84.0" prefHeight="145.0" prefWidth="160.0" />
+      <Label layoutX="393.0" layoutY="55.0" text="Additional Notes" />
    </children>
 </AnchorPane>
