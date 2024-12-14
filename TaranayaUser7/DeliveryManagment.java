@@ -3,13 +3,9 @@ package com.example.milkvitaproject.TaranayaUser7;
 public class DeliveryManagment {
         private String orderId;
         private String deliveryDate;
-        private String status:
+        private String status;
 
-        public DeliveryManagement(String orderId, String deliveryDate, String status) {
-            this.orderId = orderId;
-            this.deliveryDate = deliveryDate;
-            this.status = status;
-        }
+
 
     public DeliveryManagment(String ord01, String date, String delivered) {
     }

@@ -64,3 +64,5 @@ public class ManageSupplierRelationshipController {
         nameid.setCellValueFactory(new PropertyValueFactory<>("name"));
         emailid.setCellValueFactory(new PropertyValueFactory<>("email"));
         contactid.setCellValueFactory(new PropertyValueFactory<>("contact"));
+    }
+}

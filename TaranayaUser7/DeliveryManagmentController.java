@@ -42,6 +42,6 @@ public class DeliveryManagmentController {
         deliveryTable.getItems().addAll(
                 new DeliveryManagment("ORD01", "2024-11-29", "Delivered"),
                 new DeliveryManagment("ORD02", "2024-12-5", "Pending"),
-                new DeliveryManagment("ORD03", "2024-12-17", "In Transit"));
+                new DeliveryManagment("ORD03", "2024-12-17", "In Transit"));}
 
     }

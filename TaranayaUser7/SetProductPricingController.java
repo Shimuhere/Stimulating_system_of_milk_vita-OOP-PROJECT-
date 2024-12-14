@@ -35,10 +35,15 @@ public class SetProductPricingController {
 
         }
         @FXML
-        void returnHomeButtonOnAction(ActionEvent event) {
+               void  returnHomeButtonOnAction;(ActionEvent event){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Return Home");
             alert.setHeaderText(null);
-            alert.setContentText("Returning to the home screen.");
+            alert.setContentText("Returning to the home screen");
 
         }
+
+
+
+
+    }

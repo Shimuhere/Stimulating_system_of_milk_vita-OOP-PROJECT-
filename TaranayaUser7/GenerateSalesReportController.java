@@ -54,3 +54,5 @@ public class GenerateSalesReportController {
         productid.setCellValueFactory(new PropertyValueFactory<>("productId"));
         salesid.setCellValueFactory(new PropertyValueFactory<>("sales"));
         revenueid.setCellValueFactory(new PropertyValueFactory<>("revenue"));
+    }
+}

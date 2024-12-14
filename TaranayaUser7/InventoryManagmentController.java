@@ -43,3 +43,6 @@ public class InventoryManagmentController {
         currentstockid.setCellValueFactory(new PropertyValueFactory<>("currentStock"));
 
     }
+
+}
+
