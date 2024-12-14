@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="365.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_milkvita.TayyibaUser6.StockManagementController">
+   <children>
+      <Label layoutX="72.0" layoutY="78.0" text="Product Name:" />
+      <Label layoutX="184.0" layoutY="22.0" prefHeight="27.0" prefWidth="268.0" text="Management of Stock">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productnameTextfield" layoutX="194.0" layoutY="74.0" />
+      <Button layoutX="72.0" layoutY="288.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="25.0" prefWidth="71.0" text="Update" />
+      <Label layoutX="72.0" layoutY="219.0" prefHeight="17.0" prefWidth="99.0" text="New Stock Level:" />
+      <TextField fx:id="newstocklevelTextfield" layoutX="204.0" layoutY="215.0" />
+      <Label layoutX="62.0" layoutY="159.0" prefHeight="17.0" prefWidth="112.0" text="Current Stock Level:" />
+      <TextField fx:id="currentStockTextfield" layoutX="195.0" layoutY="155.0" />
+      <Label fx:id="confirmlabel" layoutX="373.0" layoutY="123.0" prefHeight="73.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

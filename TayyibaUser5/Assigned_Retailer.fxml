@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_milkvita.TayyibaUser5.AssignedRetailerController">
+   <children>
+      <Label layoutX="175.0" layoutY="14.0" prefHeight="25.0" prefWidth="251.0" text="Assigned Retailer Information">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="96.0" prefHeight="17.0" prefWidth="84.0" text="Retailer Name:" />
+      <Label layoutX="245.0" layoutY="96.0" prefHeight="17.0" prefWidth="105.0" />
+      <TextField fx:id="retailerNameTextfield" layoutX="226.0" layoutY="92.0" />
+      <TableView fx:id="assignedretailerTableview" layoutX="59.0" layoutY="179.0" prefHeight="164.0" prefWidth="529.0">
+        <columns>
+          <TableColumn fx:id="retailernameColumn" prefWidth="109.0" text="Retailer Name" />
+          <TableColumn fx:id="phoneNumberColumn" prefWidth="104.0" text="Phone Number" />
+            <TableColumn fx:id="shopnameColumn" prefWidth="126.0" text="Shop Name" />
+            <TableColumn fx:id="shopAddressColumn" prefWidth="189.0" text="Shop Address" />
+        </columns>
+      </TableView>
+      <Button layoutX="61.0" layoutY="130.0" mnemonicParsing="false" onAction="#viewInformationButton" prefHeight="25.0" prefWidth="118.0" text="View Information" />
+   </children>
+</AnchorPane>

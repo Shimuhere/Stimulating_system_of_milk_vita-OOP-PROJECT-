@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="Retailerdashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_milkvita.TayyibaUser6.RetailerDashboardController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="375.0" prefWidth="153.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#availableproductsButton" text="Available Products">
+               <VBox.margin>
+                  <Insets bottom="6.0" top="6.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#stockmanagementButton" text="Stock Management">
+               <VBox.margin>
+                  <Insets bottom="6.0" top="6.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#placeorderButton" text="Place Order">
+               <VBox.margin>
+                  <Insets bottom="6.0" top="6.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#receivedeliveriesButton" text="Receive Deliveries">
+               <VBox.margin>
+                  <Insets bottom="6.0" top="6.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#stockalertButton" text="Stock Alert">
+               <VBox.margin>
+                  <Insets bottom="6.0" top="6.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#salesTransactionButton" text="Sales Transaction">
+               <VBox.margin>
+                  <Insets bottom="6.0" top="6.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#managediscountsButton" text="Manage Discounts">
+               <VBox.margin>
+                  <Insets bottom="6.0" top="6.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#salesreportButton" text="Sales Report">
+               <VBox.margin>
+                  <Insets bottom="6.0" top="6.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

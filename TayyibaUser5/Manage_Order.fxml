@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="454.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_milkvita.TayyibaUser5.ManageOrderController">
+   <children>
+      <Label layoutX="220.0" layoutY="26.0" text="Order Management">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="67.0" layoutY="350.0" mnemonicParsing="false" onAction="#updateOrderButton" text="Update Order" />
+      <Label layoutX="68.0" layoutY="198.0" prefHeight="17.0" prefWidth="79.0" text="Date of Order:" />
+      <DatePicker fx:id="dateoforderDatepicker" layoutX="200.0" layoutY="194.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="67.0" layoutY="88.0" text="Product Name:" />
+      <TextField fx:id="productNameTextfield" layoutX="200.0" layoutY="84.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="67.0" layoutY="142.0" prefHeight="17.0" prefWidth="79.0" text="Quantity:" />
+      <Label layoutX="68.0" layoutY="262.0" prefHeight="17.0" prefWidth="79.0" text="Status:" />
+      <ComboBox fx:id="statusCombobox" layoutX="200.0" layoutY="258.0" prefHeight="25.0" prefWidth="166.0" />
+      <ComboBox fx:id="quantityCombobox" layoutX="200.0" layoutY="138.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label fx:id="messageLAbel" layoutX="381.0" layoutY="106.0" prefHeight="73.0" prefWidth="154.0" style="-fx-border-color: red;" />
+   </children>
+</AnchorPane>

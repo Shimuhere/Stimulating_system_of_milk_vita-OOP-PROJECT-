@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_milkvita.TayyibaUser6.StockAlertController">
+   <children>
+      <Label layoutX="257.0" layoutY="34.0" text="Stock Alert">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="90.0" text="Product Name:" />
+      <TableView fx:id="stockalerttableview" layoutX="65.0" layoutY="262.0" prefHeight="147.0" prefWidth="444.0">
+        <columns>
+          <TableColumn fx:id="productnameColumn" prefWidth="112.0" text="Product Name" />
+          <TableColumn fx:id="totalStockColumn" prefWidth="104.0" text="Total Stock" />
+            <TableColumn fx:id="currentstockColumn" prefWidth="104.0" text="Current Stock" />
+            <TableColumn fx:id="alertstatusColumn" prefWidth="123.0" text="Alert Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="58.0" layoutY="225.0" mnemonicParsing="false" onAction="#showthestockButton" text="Show the stock" />
+      <Button layoutX="65.0" layoutY="425.0" mnemonicParsing="false" onAction="#restockproductButton" text="Restock Product" />
+      <Label fx:id="showMessage" layoutX="433.0" layoutY="82.0" prefHeight="74.0" prefWidth="149.0" />
+      <ComboBox fx:id="productnameCombobox" layoutX="164.0" layoutY="86.0" prefWidth="150.0" />
+      <Label layoutX="67.0" layoutY="128.0" text="Total Stock:" />
+      <Label layoutX="67.0" layoutY="169.0" text="Current Stock:" />
+      <Label layoutX="67.0" layoutY="198.0" text="Alert Status:" />
+      <TextField fx:id="totalstockTextfield" layoutX="165.0" layoutY="124.0" />
+      <TextField fx:id="currentstockTextfield" layoutX="165.0" layoutY="165.0" />
+      <ComboBox fx:id="alertStatusCombobox" layoutX="165.0" layoutY="194.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
