@@ -3,23 +3,23 @@ package com.example.milkvitaproject.TaranayaUser7;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
-public class Dashboard {
+public class DashboardController {
 
     @FXML
     void deliverymanagmentonaction(ActionEvent event) {
-        System.out.println("Delivery management action triggered.");
+        System.out.println("Delivery management action triggered");
 
     }
 
     @FXML
     void generatesalesreportonaction(ActionEvent event) {
-        System.out.println("Generate sales report action triggered.");
+        System.out.println("Generate sales report action triggered");
 
     }
 
     @FXML
     void handlecustumoercomplaintonaction(ActionEvent event) {
-        System.out.println("Handle customer complaint action triggered.");
+        System.out.println("Handle customer complaint action triggered");
 
     }
 

@@ -8,7 +8,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class HandleCustomerComplaint {
+public class HandleCustomerComplaintController {
 
     @FXML
     private TableColumn<CustomerComplaint, String> complaintid;

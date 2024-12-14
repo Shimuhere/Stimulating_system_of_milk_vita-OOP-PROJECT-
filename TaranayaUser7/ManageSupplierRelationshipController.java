@@ -7,7 +7,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class ManageSupplierRelationship {
+import java.util.function.Supplier;
+
+public class ManageSupplierRelationshipController {
 
     @FXML
     private TableColumn<Supplier, String> contactid;

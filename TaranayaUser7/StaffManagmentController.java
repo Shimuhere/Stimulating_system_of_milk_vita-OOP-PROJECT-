@@ -9,7 +9,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class StaffManagement {
+public class StaffManagementController{
 
     @FXML
     private ComboBox<String> comboboxid;
@@ -24,16 +24,16 @@ public class StaffManagement {
     private javafx.scene.control.TextField inputshiftid;
 
     @FXML
-    private TableColumn<StaffManagement, String> nameid;
+    private TableColumn<StaffManagementController, String> nameid;
 
     @FXML
-    private TableColumn<StaffManagement, String> roleid;
+    private TableColumn<StaffManagementController, String> roleid;
 
     @FXML
-    private TableColumn<StaffManagement, String> shiftid;
+    private TableColumn<StaffManagementController, String> shiftid;
 
     @FXML
-    private TableView<StaffManagement> staffTable;
+    private TableView<StaffManagementController> staffTable;
 
     @FXML
     void addStaffOnActionButton(ActionEvent event) {
@@ -49,6 +49,9 @@ public class StaffManagement {
         staffTable.getItems().add(new Staff(name, role, shift));
         clearFields();
         showAlert("Success", "Staff added successfully.");
+    }
+
+    private void showAlert(String inputError, String s) {
     }
 
     @FXML
@@ -83,7 +86,8 @@ public class StaffManagement {
     void returnHomeOnActionButton(ActionEvent event) {
         showAlert("Return Home");
 
-   @FXML
-        public void initialize() {
+        @FXML
+        public void initialize () {
             comboboxid.getItems().addAll("YYY", "BBB", "AAA");
         }
+    }

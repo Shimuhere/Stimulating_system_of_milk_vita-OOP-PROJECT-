@@ -7,10 +7,10 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class QualityControl {
+public class QualityControlController {
 
     @FXML
-    private TableColum<QualityControl, String> inspectiondateid;
+    private TableColumn<QualityControl, String> inspectiondateid;
 
     @FXML
     private TableColumn<QualityControl, String> productlistid;
@@ -52,4 +52,5 @@ public class QualityControl {
     public void initialize() {
         inspectiondateid.setCellValueFactory(new PropertyValueFactory<>("inspectionDate"));
         productlistid.setCellValueFactory(new PropertyValueFactory<>("productList"));
-        statusid.setCellValueFactory(new PropertyValueFactory<>("status"));
+        statusid.setCellValueFactory(new PropertyValueFactory<>("status"));}
+    }

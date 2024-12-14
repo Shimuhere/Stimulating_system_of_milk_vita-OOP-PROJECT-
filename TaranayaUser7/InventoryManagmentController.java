@@ -7,16 +7,16 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class InventoryManagement {
+public class InventoryManagmentController {
 
     @FXML
-    private TableColumn<InventoryManagement, String> currentstockid;
+    private TableColumn<InventoryManagmentController, String> currentstockid;
 
     @FXML
-    private TableColumn<InventoryManagement, String> productnameid;
+    private TableColumn<InventoryManagmentController, String> productnameid;
 
     @FXML
-    private TableView<InventoryManagement> inventoryTable;
+    private TableView<InventoryManagmentController> inventoryTable;
 
     @FXML
     void confirmButtonOnAction(ActionEvent event) {

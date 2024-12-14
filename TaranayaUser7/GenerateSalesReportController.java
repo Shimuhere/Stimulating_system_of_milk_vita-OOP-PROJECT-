@@ -7,19 +7,19 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class GenerateSalesReport {
+public class GenerateSalesReportController {
 
     @FXML
-    private TableColumn<SalesReport, String> productid;
+    private TableColumn<GenerateSalesReportController, String> productid;
 
     @FXML
-    private TableColumn<SalesReport, String> revenueid;
+    private TableColumn<GenerateSalesReportController, String> revenueid;
 
     @FXML
-    private TableColumn<SalesReport, String> salesid;
+    private TableColumn<GenerateSalesReportController, String> salesid;
 
     @FXML
-    private TableView<SalesReport> salesReportTable;
+    private TableView<GenerateSalesReportController> salesReportTable;
 
     @FXML
     void generateReportOnActionButton(ActionEvent event) {
