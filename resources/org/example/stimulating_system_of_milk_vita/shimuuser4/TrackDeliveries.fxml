@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.stimulating_system_of_milk_vita.shimuuser4.TrackDeliveriesController">
+   <children>
+      <TableView fx:id="trackDeliveries" layoutX="21.0" layoutY="92.0" prefHeight="243.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="deliveryID" prefWidth="182.0" text="Delivery ID" />
+          <TableColumn fx:id="destinationTrack" prefWidth="200.0" text="Destination" />
+            <TableColumn fx:id="statusTrack" prefWidth="181.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="525.0" layoutY="361.0" mnemonicParsing="false" onAction="#resolveOnClick" text="Submit" />
+      <Button layoutX="21.0" layoutY="361.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Label layoutX="47.0" layoutY="22.0" text="DeliveryID:" />
+      <Label layoutX="300.0" layoutY="22.0" text="Status:" />
+      <Label layoutX="47.0" layoutY="65.0" text="Destination:" />
+      <TextField fx:id="deliverYID" layoutX="124.0" layoutY="18.0" />
+      <TextField fx:id="DESTination" layoutX="124.0" layoutY="61.0" />
+      <TextField fx:id="STAtus" layoutX="347.0" layoutY="18.0" />
+      <Button layoutX="462.0" layoutY="61.0" mnemonicParsing="false" onAction="#addOnClick" text="Add" />
+   </children>
+</AnchorPane>
